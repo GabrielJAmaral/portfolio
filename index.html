@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
+    <script src="./scripts/main.js"></script>
+
     <link rel="stylesheet" href="./styles/reset.css" type="text/css">
     <link rel="stylesheet" href="./styles/style.css" type="text/css">
 </head>
+
 <body>
+
+    <header class="cabecalho">
+        <button id="headerBtnAbout" class="cabecalho__button" onmouseenter="highlightBtn('headerBtnAbout')" onmouseleave="loseHighlightBtn('headerBtnAbout')">Sobre Mim</button>
+        <button id="headerBtnExp" class="cabecalho__button" onmouseenter="highlightBtn('headerBtnExp')" onmouseleave="loseHighlightBtn('headerBtnExp')">Experiências</button>
+    </header>
+
     <main class="apresentacao">
         <section class="apresentacao__info-section">
             <h1>Olá! Meu nome é <span class="important-info">Gabriel Amaral</span>!</h1>
-            <p>Sou desenvolvedor mobile, com experiência em desenvolvimento nativo (Android e iOS) e usando framework React Native!</p>
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas, com interesse em <span class="important-info">Desenvolvimento Mobile</span> e <span class="important-info">Web</span></p>
+
+            <br>
+
+            <section class="info-section__interests-info">
+                <h2>Interesses</h2>
+                <ul>
+                    <li>React Native</li>
+                    <li>Android e Kotlin Multiplatform</li>
+                    <br>
+                    <li>React</li>
+                    <li>HTML/CSS/Javascript</li>
+                    <li>Node.js e Deno</li>
+                </ul>
+            </section>
+            
         </section>
         <img class="apresentacao__profile-image" src="./res/images/profileImage.png">
     </main>
+
+    <footer class="rodape">
+        <button>
+            <img class="rodape__image" src="./res/images/githubIcon.png">
+        </button>
+
+        <button>
+            <img class="rodape__image" src="./res/images/emailLogo.png">
+        </button>
+    </footer>
 </body>
+
 </html>
